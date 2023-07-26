@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+   --fc-logo: #FFFFFF;
+   --bg-input: #06181C;
+   --fc-input: #7C7C8A;
+   --bg-button: #065E7C;
+   --header-table: #092D38;
+   --fc-remove: #F75A68;
+   --fc-table: #E1E1E6;
+   --border-table: #4A808C;
+   --bg-body: #000000;
+   --bg-oddtable: #030a0cc1;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-body);
+}
+
+#app {
+    width: 112rem;
+    margin: 0 auto;
+  
+    
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30rem;
+    margin-top: 11.5rem;
+    flex: 1;
+    margin-bottom: 8.7rem;
+    
+}
+.logo {
+    left: 0;
+}
+
+.input {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+   
+}
+
+.input input {
+    height: 4.8rem;
+    width: 46rem;
+    margin:0;
+    border-radius: 0.5rem;
+    padding: 0 .8rem;
+    background-color: var(--bg-input) ;
+    color: var(--fc-input);
+    border: 1px solid var(--border-table);
+    outline: var(--border-table);
+}
+button {
+    display: flex;
+    width: 17rem;
+    height: 4.8rem;
+    background-color: var(--bg-button) ;
+    color: var(--fc-table);
+    font-size: 1.4rem;
+    align-items: CENTER;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    padding: 1.2rem 3.2rem;
+    outline: none;
+    border: none;
+    cursor: pointer
+}
+button > span {
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 0.3rem;
+    
+}
+
+button > svg {
+    fill: var(--fc-logo);
+    width: 3.4rem;
+    height: 2.4rem;
+}
+
+button:hover {
+    background-color: var(--fc-logo);
+    color: var(--bg-button);
+}
+
+button:hover > svg  {
+    fill:var(--bg-button);
+}
+
+table {
+    color: var(--fc-table);
+    width: 112rem;
+    
+    font-size: 1.4rem;
+    width: 100%;
+   
+    border-collapse: collapse ;
+   
+}
+
+table thead {
+    background-color: var(--header-table);
+    height: 6.4rem;
+    align-items: flex-start;
+    border-radius: 50%;
+
+}
+table th:first-child{
+    border-top-left-radius: .7rem;
+ }
+ 
+ table th:last-child{
+     border-top-right-radius: .7rem;
+ }
+table tr:first-child {
+    width: 50%;
+}
+table tr:nth-child(odd) {
+    background-color: var(--bg-oddtable);
+}
+table th {
+   text-align: left;
+   padding: 2.5rem 4rem;
+}
+
+table td {
+    
+    text-align: left;
+    padding: 2.5rem 4rem;
+}
+
+table th:first-child{
+    border-top-left-radius: .4rem;
+ }
+ 
+ table th:last-child{
+     border-top-right-radius: .4rem;
+ }
+    
+ td.user {
+    display: flex;  
+    gap: 1.6rem;
+    font-size: 1.4rem;
+     
+}
+td.user a {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    text-decoration: none;
+    color: var(--fc-table);
+   cursor: pointer;
+   justify-content: center;
+   
+}
+
+td.user p {
+    display: flex;
+    color: var(--fc-table);
+   
+    
+}
+td.remove {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ td.user img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius : 50%;
+}
